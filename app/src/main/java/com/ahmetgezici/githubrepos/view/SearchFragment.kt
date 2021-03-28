@@ -63,55 +63,69 @@ class SearchFragment : Fragment() {
 
         binding.search.setOnClickListener(View.OnClickListener {
 
-            // Get Repos
+            if (binding.userName.text?.isNotEmpty() == true) {
 
-            viewModel.getRepos(binding.userName.text.toString()).observe(viewLifecycleOwner,
-                Observer { repoListRes ->
+                // Get Repos
 
-                    if (repoListRes.status == Status.LOADING) {
+                viewModel.getRepos(binding.userName.text.toString()).observe(viewLifecycleOwner,
+                    Observer { repoListRes ->
 
-                        viewModel.loading.postValue(true)
+                        if (repoListRes.status == Status.LOADING) {
 
-                    } else if (repoListRes.status == Status.SUCCESS) {
+                            viewModel.loading.postValue(true)
 
-                        viewModel.repoData.postValue(repoListRes.data)
+                        } else if (repoListRes.status == Status.SUCCESS) {
 
-                    } else if (repoListRes.status == Status.ERROR) {
+                            viewModel.repoData.postValue(repoListRes.data)
 
-                        if (repoListRes.message?.contains("HTTP 404")!!) {
+                        } else if (repoListRes.status == Status.ERROR) {
 
-                            MaterialAlertDialogBuilder(
-                                requireContext(), R.style.MaterialAlertDialog_Rounded
-                            )
-                                .setMessage(getString(R.string.no_user_body))
-                                .setCancelable(false)
-                                .setPositiveButton(getString(R.string.ok)) { dialog, which ->
+                            if (repoListRes.message?.contains("HTTP 404")!!) {
 
-                                    viewModel.loading.postValue(false)
+                                MaterialAlertDialogBuilder(
+                                    requireContext(), R.style.MaterialAlertDialog_Rounded
+                                )
+                                    .setMessage(getString(R.string.no_user_body))
+                                    .setCancelable(false)
+                                    .setPositiveButton(getString(R.string.ok)) { dialog, which ->
 
-                                }
-                                .show()
+                                        viewModel.loading.postValue(false)
 
-                        } else {
+                                    }
+                                    .show()
 
-                            MaterialAlertDialogBuilder(
-                                requireContext(), R.style.MaterialAlertDialog_Rounded
-                            )
-                                .setTitle(getString(R.string.error_title))
-                                .setMessage(getString(R.string.not_connect))
-                                .setCancelable(false)
-                                .setPositiveButton(getString(R.string.ok)) { dialog, which ->
+                            } else {
 
-                                    viewModel.loading.postValue(false)
+                                MaterialAlertDialogBuilder(
+                                    requireContext(), R.style.MaterialAlertDialog_Rounded
+                                )
+                                    .setTitle(getString(R.string.error_title))
+                                    .setMessage(getString(R.string.not_connect))
+                                    .setCancelable(false)
+                                    .setPositiveButton(getString(R.string.ok)) { dialog, which ->
 
-                                }
-                                .show()
+                                        viewModel.loading.postValue(false)
+
+                                    }
+                                    .show()
+
+                            }
 
                         }
 
-                    }
+                    })
 
-                })
+            } else {
+
+                MaterialAlertDialogBuilder(
+                    requireContext(), R.style.MaterialAlertDialog_Rounded
+                )
+                    .setMessage(getString(R.string.empty_edittext))
+                    .setPositiveButton(getString(R.string.ok),null)
+                    .show()
+
+            }
+
         })
 
         ////////////////////////////////////////////////////////////////////////////////////////////

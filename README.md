@@ -31,6 +31,7 @@ With this application; You can search Github Repos, review their details and add
 🔹   [Material Components](https://material.io/components) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 🔸   [MaterialCardView](https://material.io/components/cards) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 🔸   [BottomAppBar](https://material.io/components/app-bars-bottom) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; 🔸   [MaterialAlertDialog](https://material.io/components/dialogs) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 🔸   [FloatingActionButton](https://material.io/components/buttons-floating-action-button) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 🔸   [Progressindicators](https://material.io/components/progress-indicators) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; 🔸   [TextFields](https://material.io/components/text-fields) <br>

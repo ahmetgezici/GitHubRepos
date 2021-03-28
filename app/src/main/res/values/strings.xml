@@ -39,5 +39,6 @@
     <string name="no">No</string>
     <string name="error_title">Error</string>
     <string name="not_connect">Could Not Connect!</string>
+    <string name="empty_edittext">Username cannot be empty!</string>
 
 </resources>

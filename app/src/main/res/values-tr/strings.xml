@@ -39,7 +39,6 @@
     <string name="no">Hayır</string>
     <string name="error_title">Hata</string>
     <string name="not_connect">Bağlanılamadı!</string>
-
-
+    <string name="empty_edittext">Kullanıcı adı boş olamaz!</string>
 
 </resources>
