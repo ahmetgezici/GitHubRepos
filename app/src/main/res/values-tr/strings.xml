@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Github Repos</string>
+
+    <!--Home-->
+    <string name="search_repo">Repo Ara</string>
+    <string name="favorite_repos">Favori Repolar</string>
+
+    <!--Dialog-->
+    <string name="dialog_theme">Tema</string>
+    <string name="dialog_theme_dark">Koyu</string>
+    <string name="dialog_theme_light">Açık</string>
+    <string name="dialog_language">Dil</string>
+
+    <!--Search Repo-->
+    <string name="search_repo_title">Repo Ara</string>
+    <string name="search_username_hint">Kullanıcı Adı</string>
+    <string name="search_repo_btn">Ara</string>
+    <string name="search_repo_btn_loading">Lütfen Bekleyin…</string>
+
+    <!--Details-->
+    <string name="details_title">Detaylar</string>
+    <string name="followers">Takipçi: </string>
+    <string name="following">Takip: </string>
+    <string name="issues">Sorunlar: </string>
+    <string name="created">Oluşturma:</string>
+    <string name="updated">Güncelleme:</string>
+    <string name="goGithub">Github\'a Git</string>
+
+    <!--Favorites-->
+    <string name="favorites_title">Favori Repolar</string>
+    <string name="favorites_no_data">Favorilere eklenmiş\nRepo bulunmamaktadır</string>
+    <string name="delete_all_title">Favoriler Siliniyor</string>
+    <string name="delete_all_body">Tüm Favorileri silmek istediğinize emin misiniz?</string>
+
+    <!--Error-->
+    <string name="no_user_body">Kullanıcı Bulunamadı!</string>
+    <string name="ok">Tamam</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="error_title">Hata</string>
+    <string name="not_connect">Bağlanılamadı!</string>
+
+
+
+</resources>

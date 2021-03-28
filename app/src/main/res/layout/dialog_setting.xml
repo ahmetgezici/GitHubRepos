@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/setting_color"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/gilroy_extrabold"
+            android:text="@string/dialog_theme"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:drawableStartCompat="@drawable/ic_theme" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/gilroy_extrabold"
+                android:gravity="center|end"
+                android:text="@string/dialog_theme_dark"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/ic_night_mode" />
+
+            <com.mahfa.dnswitch.DayNightSwitch
+                android:id="@+id/day_night_switch"
+                android:layout_width="70dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/gilroy_extrabold"
+                android:gravity="center|start"
+                android:text="@string/dialog_theme_light"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/ic_light_mode" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="27dp"
+            android:background="#B1B1B1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/gilroy_extrabold"
+            android:text="@string/dialog_language"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:drawableStartCompat="@drawable/ic_language" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/gilroy_extrabold"
+                android:gravity="center|end"
+                android:text="Türkçe"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.bitvale.switcher.SwitcherX
+                android:id="@+id/language_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                app:switcher_off_color="@color/holo_blue_bright"
+                app:switcher_on_color="@color/holo_orange_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/gilroy_extrabold"
+                android:gravity="center|start"
+                android:text="English"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

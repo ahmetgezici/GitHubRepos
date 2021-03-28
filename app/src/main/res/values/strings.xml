@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">GitHub Repos</string>
+
+    <!--Home-->
+    <string name="search_repo">Search Repo</string>
+    <string name="favorite_repos">Favorite Repos</string>
+
+    <!--Dialog-->
+    <string name="dialog_theme">Theme</string>
+    <string name="dialog_theme_dark">Dark</string>
+    <string name="dialog_theme_light">Light</string>
+    <string name="dialog_language">Language</string>
+
+    <!--Search Repo-->
+    <string name="search_repo_title">Search Repo</string>
+    <string name="search_username_hint">Username</string>
+    <string name="search_repo_btn">Search</string>
+    <string name="search_repo_btn_loading">Please wait…</string>
+
+    <!--Details-->
+    <string name="details_title">Details</string>
+    <string name="followers">Followers: </string>
+    <string name="following">Following: </string>
+    <string name="issues">Issues: </string>
+    <string name="created">Created:</string>
+    <string name="updated">Updated:</string>
+    <string name="goGithub">Go to Github</string>
+
+    <!--Favorites-->
+    <string name="favorites_title">Favorite Repos</string>
+    <string name="favorites_no_data">There is no Repo\nadded to favorites</string>
+    <string name="delete_all_title">Deleting Favorites</string>
+    <string name="delete_all_body">Are you sure you want to delete all Favorites?</string>
+
+    <!--Error-->
+    <string name="no_user_body">User not found!</string>
+    <string name="ok" tools:ignore="ButtonCase">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="error_title">Error</string>
+    <string name="not_connect">Could Not Connect!</string>
+
+</resources>

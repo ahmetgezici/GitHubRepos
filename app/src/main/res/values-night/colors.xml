@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="status_color">#2F2F2F</color>
+
+    <color name="background_primary">#121212</color>
+
+    <color name="logo_color">@color/white</color>
+    <color name="button_color">@color/purple_200</color>
+
+    <color name="setting_color">#575757</color>
+
+    <color name="bar_color">#2F2F2F</color>
+    <color name="bar_primary">@color/purple_200</color>
+    <color name="bar_line">#575757</color>
+
+    <color name="search_color">@color/purple_200</color>
+    <color name="search_text_color">#EFEFEF</color>
+    <color name="search_bg_color">#808080</color>
+    <color name="search_stroke_color">#C1C1C1</color>
+    <color name="end_icon_color">#DDDDDD</color>
+
+    <color name="detail_loading_color">#757575</color>
+
+</resources>

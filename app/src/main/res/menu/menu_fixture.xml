@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/allDelete"
+        android:icon="@drawable/ic_all_delete"
+        android:title="Tümünü Sil"
+        app:showAsAction="ifRoom" />
+
+</menu>
