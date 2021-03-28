@@ -3,12 +3,12 @@
 [![Platform](https://img.shields.io/badge/Platform-Android-yellow.svg)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 [![API](https://img.shields.io/badge/Language-Kotlin-F18E33.svg?style=flat)](https://android-arsenal.com/api?level=21)
-[![API](https://img.shields.io/badge/Download-apk-3066BE.svg?style=flat)]()
+[![API](https://img.shields.io/badge/Download-apk-3066BE.svg?style=flat)](https://github.com/ahmetgezici/GitHubRepos/releases/download/v1.0/GithubRepos-1.0.apk)
 
 
 With this application; You can search Github Repos, review their details and add them to favorites.
 
-📥 <b>[Download Apk]()
+📥 <b>[Download Apk](https://github.com/ahmetgezici/GitHubRepos/releases/download/v1.0/GithubRepos-1.0.apk)
 
 ## 🔧 Architecture && Using Library
 
@@ -40,9 +40,11 @@ With this application; You can search Github Repos, review their details and add
 🔹   [LikeButton](https://github.com/jd-alexander/LikeButton)
 
 ## ⭐️ Features
+
+&nbsp;&nbsp;&nbsp;&nbsp; ✔️ <b>Search for Repos on Github</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp; ✔️ <b>Saving Repos to Favorites</b><br>
 &nbsp;&nbsp;&nbsp;&nbsp; ✔️ <b>Dark Mode Supported</b><br>
 &nbsp;&nbsp;&nbsp;&nbsp; ✔️ <b>Multi Language Supported</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp; ✔️ <b>Saving to Favorites</b><br>
 
 ## 💠 Icons
 &nbsp;&nbsp;&nbsp;&nbsp; 💯  [Flaticon](https://www.flaticon.com)
